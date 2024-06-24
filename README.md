@@ -1,1 +1,8 @@
 # Airline-Sentiment-Analysis
+Parameter-Efficient Fine-Tuning (PEFT) of BERT Model with LoRA for Sentiment Analysis of Airline Reviews
+
+The objective of this project is to fine-tune a pre-trained DistilBERT model using Low-Rank Adaptation (LoRA) techniques on a dataset of airline reviews. The primary goal is to classify the sentiment of the reviews (positive or negative) based on the review headers and overall ratings provided by passengers. By leveraging LoRA, the aim is to efficiently adapt the model with minimal additional parameters, specifically enhancing performance on a domain-specific sentiment analysis task (airline reviews). The project includes data preprocessing, model training, and evaluation to promote increased high accuracy and performance in predicting review sentiments.
+
+The training results indicate that the model performs exceptionally well on the training dataset - however, the evaluation results show a significant drop in performance. The discrepancy clearly suggests that the model is overfitting, learning the training data patterns too well while failing to generalize to new, unseen data. 
+
+To mitigate this overfitting, I could further fine-tune the model's parameter arguments, such as reducing the number of epochs, adjusting the learning rate and weight decay among others. Additionally, I could implement/experiment with alternative approaches, such as prompt engineering, different adaptors, or transfer learning. However, my main goal in undertaking this project was not necessarily to achieve perfect results, but to learn through applied example how the process of fine-tuning LLM's towards a specific task or domain works!
